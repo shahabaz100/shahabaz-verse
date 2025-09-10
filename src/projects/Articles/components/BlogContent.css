@@ -1,0 +1,98 @@
+.blog-page {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Blog Card */
+.blog-article {
+  max-width: 75vw;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  backdrop-filter: blur(6px);
+}
+
+/* Cover Image */
+.blog-hero {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.blog-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Body */
+.blog-body {
+  padding: 2rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Blog Content */
+.blog-body p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+/* Author Info */
+.blog-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.blog-author-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.blog-author {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Delete Button */
+.delete-btn {
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  background: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #c71c2c;
+}

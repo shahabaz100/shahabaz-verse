@@ -1,0 +1,175 @@
+.blog-editor {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Light Theme */
+.blog-editor.light {
+    background-color: #ffffff;
+    color: #111;
+}
+
+/* Dark Theme */
+.blog-editor.dark {
+    background-color: #1c1c1c;
+    color: #eee;
+}
+
+/* Inputs */
+.blog-editor input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.blog-editor.light input[type="text"] {
+    background-color: #fafafa;
+    color: #111;
+}
+
+.blog-editor.dark input[type="text"] {
+    background-color: #2a2a2a;
+    border-color: #444;
+    color: #eee;
+}
+
+.blog-editor input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Author Option (Switch) */
+.author-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+/* Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch input:checked+.slider {
+    background-color: #007bff;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(22px);
+}
+
+/* Jodit Editor Wrapper */
+.jodit-container {
+    border-radius: 10px !important;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+/* Editor Backgrounds */
+.blog-editor.light .jodit-container {
+    background-color: #fff !important;
+    border: 1px solid #ddd;
+}
+
+.blog-editor.dark .jodit-container {
+    background-color: #2a2a2a !important;
+    border: 1px solid #444;
+    color: #111;
+}
+
+/* Buttons */
+.blog-editor button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blog-editor button:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+.blog-editor.dark .save-blog {
+    background-color: #ff4081;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.blog-editor.light .save-blog {
+    margin-top: 10px;
+    background-color: #d4bb22;
+    color: #111;
+}
+
+.jodit-dialog__panel {
+    color: black;
+}
+
+.cover-upload {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.cover-upload input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.cover-preview {
+  margin-top: 0.5rem;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}

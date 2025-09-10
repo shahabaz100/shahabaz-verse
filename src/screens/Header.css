@@ -1,0 +1,143 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #070709;
+  color: #fff;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.home-btn {
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.quick-links .linkTo {
+  text-decoration: none;
+  margin: 0 20px;
+  color: inherit; /* matches theme */
+  position: relative;
+}
+
+.quick-links .linkTo::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: #ff4081;
+  transition: width 0.3s;
+}
+
+.quick-links .linkTo:hover::after {
+  width: 100%;
+}
+
+.theme-btn button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.contact-btn {
+  padding: 8px 16px;
+  border: 2px solid #ff4081;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #ff4081;
+  color: #fff;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+body.light-theme .header {
+  background-color: #d4bb22;
+  color: #111;
+}
+
+body.light-theme .quick-links .linkTo {
+  color: #111;
+}
+
+body.light-theme .theme-btn button {
+  color: #111;
+}
+
+body.dark-theme {
+  /* background-color: #14144a; */
+  background-color: #111;
+  color: #eee;
+}
+
+body.dark-theme .header {
+  background-color: #070709;
+  color: #fff;
+}
+
+body.dark-theme .quick-links .linkTo {
+  color: #fff;
+}
+
+body.dark-theme .theme-btn button {
+  color: #fff;
+}
+.theme-btn button {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.theme-btn button:hover {
+  transform: scale(1.2);
+}
+
+.theme-btn-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: max-content;
+  max-width: 200px;
+  background-color: rgba(0, 0, 0, 0.8); /* dark background */
+  color: #fff; /* white text */
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  position: absolute;
+  top: 125%; /* below the button */
+  left: 0%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.theme-btn-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(5px); /* subtle slide down */
+}

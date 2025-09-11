@@ -13,6 +13,7 @@ const Todo = lazy(() => import('./projects/TodoList/screens/Todo'));
 const Blogs = lazy(() => import('./projects/Articles/screens/Blogs'));
 const BlogArticle = lazy(() => import('./projects/Articles/screens/BlogArticle'));
 const CreateBlog = lazy(() => import('./projects/Articles/screens/CreateBlog'));
+const Contact = lazy(() => import('./screens/Contact'));
 
 function App() {
   const [blogsList, setBlogsList] = useState([]);
@@ -30,7 +31,6 @@ function App() {
         <ScrollToTop />
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         
-        {/* Suspense fallback while components load */}
         <Suspense fallback={<div className="loader">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />
@@ -43,6 +43,7 @@ function App() {
             <Route path="Articles/:id" element={<BlogArticle darkMode={darkMode} />} />
             <Route path="projects" element={<Projects darkMode={darkMode} />} />
             <Route path="todo" element={<Todo darkMode={darkMode} />} />
+            <Route path="contact" element={<Contact darkMode={darkMode} />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

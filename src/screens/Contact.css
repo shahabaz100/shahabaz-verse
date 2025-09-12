@@ -7,6 +7,15 @@
   background: linear-gradient(to right, #f9fafb, #eef2f7);
 }
 
+.contact-container.lightTheme {
+  background: linear-gradient(to right, #070709, #070709);
+  color: #fff;
+  p {
+    color: #fff;
+
+  }
+}
+
 .contact-left {
   flex: 1;
 }
@@ -33,10 +42,21 @@
   gap: 1rem;
 }
 
-.twitter { color: #1DA1F2; }
-.facebook { color: #1877F2; }
-.linkedin { color: #0A66C2; }
-.instagram { color: #E1306C; }
+.twitter {
+  color: #1DA1F2;
+}
+
+.facebook {
+  color: #1877F2;
+}
+
+.linkedin {
+  color: #0A66C2;
+}
+
+.instagram {
+  color: #E1306C;
+}
 
 .contact-right {
   flex: 1;
@@ -47,7 +67,7 @@
 .contact-right img {
   max-width: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive */

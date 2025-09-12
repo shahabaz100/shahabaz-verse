@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css';
 import profilePic from '../assets/images/test3.jpeg'; // replace with your photo
+import TechStack from './TechStack';
 
 function About({ darkMode }) {
   return (
@@ -10,6 +11,7 @@ function About({ darkMode }) {
         <h1>Shahabaz Khan</h1>
         <h2>Front End Engineer</h2>
         <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+        <TechStack />
       </div>
 
       <div className={`about-right ${darkMode ? 'lightTheme' : 'darkTheme'}`}>

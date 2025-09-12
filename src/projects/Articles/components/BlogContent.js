@@ -30,12 +30,12 @@ function BlogContent({ blogDetails, deleteArticle, darkMode }) {
                         {new Date(blogDetails.publishedDate?.seconds * 1000).toDateString()}
                     </p>
                     <BlogView content={blogDetails.content} />
-                    <button
+                    {/* <button
                         className="delete-btn"
                         onClick={() => deleteArticle(blogDetails.id)}
                     >
                         Delete Article
-                    </button>
+                    </button> */}
                 </div>
             </article>
         </div>

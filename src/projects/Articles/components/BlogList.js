@@ -24,7 +24,7 @@ function BlogList({ blogsList }) {
                         </div>
                         <div className="blog-meta">
                             <img className="blog-author" src={blog.authorImage || AuthorImage} alt={blog.author} />
-                            <span>{`${blog.author} • ${blog.publishedDate}`}</span>
+                            <span>{`${blog.author} • ${new Date(blog.publishedDate?.seconds * 1000).toDateString()}`}</span>
                         </div>
                         <Link to={`/Articles/${blog.id}`} className="blog-btn">Read More</Link>
                     </div>

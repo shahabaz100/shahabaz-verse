@@ -1,6 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import contactImg from "../assets/images/anonymous-blog.jpg"; // replace with your image
+import contactImg from "../assets/images/test4.jpg";
 import SocialLinks from "../components/SocialLinks";
 
 function Contact({ darkMode }) {

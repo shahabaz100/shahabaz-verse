@@ -34,7 +34,7 @@ function App() {
         <Suspense fallback={<div className="loader">Loading...</div>}>
           <Routes>
             <Route path="/" element={<Home darkMode={darkMode} />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<About darkMode={darkMode} />} />
             <Route 
               path="Articles" 
               element={<Blogs blogsList={blogsList} setBlogsList={setBlogsList} darkMode={darkMode} />} 

@@ -1,3 +1,9 @@
+html, body, #root, #main-app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif;
@@ -7,10 +13,6 @@ body {
   text-align: center;
 }
 
-/* #main-app {
-  background-color: #070709;
-  color: #fff;
-} */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -61,7 +63,7 @@ body.light-theme {
 
 /* Dark Mode */
 body.dark-theme {
-  background-color: #111;
+  background-color: #0a192f;
   color: #eee;
 }
 

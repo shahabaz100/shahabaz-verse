@@ -1,0 +1,123 @@
+.about-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a192f;
+  color: #ccd6f6;
+
+
+  .about-left {
+    flex: 0 0 350px;
+    padding: 2rem;
+    background-color: #112240;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+
+  .profile-pic {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid #64ffda;
+    margin-bottom: 2rem;
+  }
+
+  .about-left h1 {
+    font-size: 2rem;
+    color: #64ffda;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-left h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #8892b0;
+  }
+
+  .about-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-right {
+    flex: 1;
+    padding: 3rem 2rem;
+  }
+
+  .lightTheme,
+  .lightTheme p {
+    background-color: #fff;
+    color: #000;
+
+    h2,
+    h3,
+    .duration {
+      color: #c4ad20;
+    }
+
+    .experience-card {
+      background-color: #fff;
+    }
+  }
+
+  .about-right h2 {
+    font-size: 1.8rem;
+    color: #64ffda;
+    margin-bottom: 1rem;
+  }
+
+  .about-right p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .experience-card {
+    background-color: #112240;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .experience-card h3 {
+    margin-bottom: 0.5rem;
+    color: #64ffda;
+  }
+
+  .experience-card .duration {
+    display: block;
+    font-size: 0.9rem;
+    color: #8892b0;
+    margin-bottom: 1rem;
+  }
+
+  .experience-card ul {
+    list-style: disc inside;
+    line-height: 1.6;
+  }
+
+  .experience-card li strong {
+    color: #64ffda;
+  }
+
+  @media (max-width: 900px) {
+    .about-wrapper {
+      flex-direction: column;
+    }
+
+    .about-left {
+      flex: none;
+      position: relative;
+      height: auto;
+      padding: 1.5rem;
+    }
+
+    .about-right {
+      padding: 2rem 1rem;
+    }
+  }
+}

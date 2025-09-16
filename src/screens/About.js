@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profilePic from '../assets/images/test3.jpeg'; // replace with your photo
+import profilePic from '../assets/images/about.jpeg';
 import TechStack from './TechStack';
 
 function About({ darkMode }) {

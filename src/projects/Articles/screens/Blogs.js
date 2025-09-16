@@ -1,29 +1,3 @@
-// import React, { useEffect } from 'react'
-// import './Blogs.css'
-// import BlogList from '../components/BlogList';
-// import { Link } from 'react-router-dom';
-// import { collection, getDocs } from 'firebase/firestore';
-// import { db } from '../../../firebase';
-
-// function Blogs({ blogsList, setBlogsList }) {
-//   useEffect(() => {
-//     const fetchBlogs = async () => {
-//       const querySnap = await getDocs(collection(db, 'blogs'));
-//       setBlogsList(querySnap.docs.map(doc => ({ id: doc.id, ...doc.data() })))
-//     }
-//     fetchBlogs()
-//   }, [setBlogsList]);
-
-//   return (
-//     <>
-//       <Link to={'AddBlog'}> Add A Blog</Link>
-//       <BlogList blogsList={blogsList} />
-//     </>
-//   )
-// }
-
-// export default Blogs;
-
 import React, { useEffect } from 'react';
 import './Blogs.css';
 import BlogList from '../components/BlogList';

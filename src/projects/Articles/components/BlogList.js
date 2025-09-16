@@ -11,12 +11,10 @@ function BlogList({ blogsList }) {
         <div className="blogs-grid">
             {blogsList && blogsList.map((blog) => (
                 <article onClick={() => navigate(`/Articles/${blog.id}`)} className="blog-card" key={blog.id}>
-                    {/* Blog Image */}
                     <div className="blog-image">
                         <img src={blog.coverImage ||BlogImage} alt={blog.title} />
                     </div>
 
-                    {/* Blog Details */}
                     <div className="blog-info">
                         <h2>{blog.title}</h2>
                         <div style={{ maxHeight: '150px', minHeight: '100px', overflow: "hidden" }}>

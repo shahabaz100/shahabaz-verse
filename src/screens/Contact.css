@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem 8%;
+  padding: 0rem 8%;
   min-height: 100vh;
   background: linear-gradient(to right, #f9fafb, #eef2f7);
 }
 
 .contact-container.lightTheme {
-  background: linear-gradient(to right, #070709, #070709);
+  background: #0a192f;
   color: #fff;
   p {
     color: #fff;
@@ -18,6 +18,7 @@
 
 .contact-left {
   flex: 1;
+  margin-left: 12%;
 }
 
 .contact-left h1 {
@@ -62,6 +63,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  margin-top: 120px;
 }
 
 .contact-right img {

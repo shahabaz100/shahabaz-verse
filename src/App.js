@@ -19,7 +19,6 @@ function App() {
   const [blogsList, setBlogsList] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
 
-  // Apply theme class to <body>
   useEffect(() => {
     document.body.classList.remove('light-theme', 'dark-theme');
     document.body.classList.add(darkMode ? 'light-theme' : 'dark-theme');

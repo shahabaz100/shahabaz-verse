@@ -61,6 +61,47 @@ function About({ darkMode }) {
           </div>
         </section>
 
+        <section id="tech-stack">
+          <h2>Tech Stack</h2>
+          <p>
+            Here are the tools and technologies I work with day-to-day:
+          </p>
+          <ul className="skills-list">
+            <li><strong>Frontend:</strong> Angular (2–14), React, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</li>
+            <li><strong>State Management:</strong> NgRx, Redux</li>
+            <li><strong>Backend & APIs:</strong> Node.js, REST APIs</li>
+            <li><strong>Databases & Cloud:</strong> Firebase (Auth, Hosting, Firestore)</li>
+            <li><strong>UI/UX & Standards:</strong> Responsive Design, WCAG Accessibility, Design Systems</li>
+            <li><strong>Tools & Workflow:</strong> Git, CI/CD, Agile/Scrum</li>
+          </ul>
+        </section>
+
+        <section id="certifications">
+          <h2>Certifications</h2>
+          <ul>
+            <li>
+              <strong>Infosys Certified Angular Professional</strong>
+            </li>
+            <li>
+              <strong>Infosys Certified React Professional</strong>
+            </li>
+            <li>
+              <strong>Infosys Certified Frontend Web Developer</strong>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills">
+          <h2>Skills at a Glance</h2>
+          <ul className="skills-list">
+            <li>Frontend Engineering – building scalable, responsive apps</li>
+            <li>UI/UX – pixel-perfect, accessible, and user-focused design</li>
+            <li>Performance Optimization – improving speed and scalability</li>
+            <li>Leadership – mentoring, Agile workflows, cross-team collaboration</li>
+            <li>Problem Solving – transforming complex requirements into clean solutions</li>
+          </ul>
+        </section>
+        
         <section id="awards">
           <h2>Awards & Recognitions</h2>
           <ul>
@@ -83,31 +124,9 @@ function About({ darkMode }) {
           </ul>
         </section>
 
-        <section id="skills">
-          <h2>Skills at a Glance</h2>
-          <ul className="skills-list">
-            <li>Frontend Engineering – building scalable, responsive apps</li>
-            <li>UI/UX – pixel-perfect, accessible, and user-focused design</li>
-            <li>Performance Optimization – improving speed and scalability</li>
-            <li>Leadership – mentoring, Agile workflows, cross-team collaboration</li>
-            <li>Problem Solving – transforming complex requirements into clean solutions</li>
-          </ul>
-        </section>
 
-        <section id="tech-stack">
-          <h2>Tech Stack</h2>
-          <p>
-            Here are the tools and technologies I work with day-to-day:
-          </p>
-          <ul className="skills-list">
-            <li><strong>Frontend:</strong> Angular (2–14), React, TypeScript, JavaScript (ES6+), HTML5, CSS3, SCSS</li>
-            <li><strong>State Management:</strong> NgRx, Redux</li>
-            <li><strong>Backend & APIs:</strong> Node.js, REST APIs</li>
-            <li><strong>Databases & Cloud:</strong> Firebase (Auth, Hosting, Firestore)</li>
-            <li><strong>UI/UX & Standards:</strong> Responsive Design, WCAG Accessibility, Design Systems</li>
-            <li><strong>Tools & Workflow:</strong> Git, CI/CD, Agile/Scrum</li>
-          </ul>
-        </section>
+
+
       </div>
     </div>
   );
